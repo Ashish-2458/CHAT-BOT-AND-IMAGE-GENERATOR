@@ -5,7 +5,7 @@ from PIL import Image
 
 
 
-def get_gemini_response(input_text=None, image=None):
+def get_response(input_text=None, image=None):
     if input_text and image:
         # If both input_text and image are present, combine them
         response = model.generate_content(input_text)  # Assuming the API handles text + image internally
