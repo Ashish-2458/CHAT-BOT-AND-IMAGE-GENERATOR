@@ -3,11 +3,7 @@ import os
 import google.generativeai as genai
 from PIL import Image
 
-# Configure Gemini 1.5 Flash API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# Load the gemini-1.5-flash model and get responses
-model = genai.GenerativeModel("gemini-1.5-flash")
 
 def get_gemini_response(input_text=None, image=None):
     if input_text and image:
